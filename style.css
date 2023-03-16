@@ -22,13 +22,12 @@ body{
 }
 .header{
     min-height: 100vh;
-    width: 100%;
     background-image: url('images/desktop/image-header.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
+    object-fit: cover;    
 }
 @media (max-width: 700px) {
     .header{
@@ -82,9 +81,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 100px;
-    padding-top: 58px;
+    padding-bottom: 58px;
     margin-top: 80px;
 }
 
@@ -95,6 +92,15 @@ nav{
     font-size: 2.5rem;
     font-family: 'Fraunces', serif;
     letter-spacing: 0.2em;
+}
+
+.header-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-arrow img{
+    position: relative;
 }
 
 .wrapper-1{
@@ -403,13 +409,14 @@ footer{
         flex-direction: column;
     }
     .header-text{
-        gap: 2em; 
+    margin-top: 40px; 
+    padding-top: 40px;
     }
     .header-text h2{
         text-align: center;
     }
 
-    .text-1 p{
+    .text-1 p .text-2 p{
         font-size: 0.5em;
         line-height: 1rem;
     }
@@ -420,6 +427,12 @@ footer{
     }
     .btn{
         font-size: 0.35em;
+    }
+    .footer-icon img{
+        margin: 0 0.4em;
+    }
+    .footer-nav li{ 
+        margin: 0 0.4em; 
     }
 }
 
